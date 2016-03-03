@@ -1,0 +1,69 @@
+section.blue
+  height: 100vh
+  position: relative
+  margin-top: -70px
+  padding-bottom: 70px
+  svg
+    position: absolute
+
+  .blue-content
+    position: absolute
+    max-width: 30%
+    top: 20%
+    left: 60%
+    color: black
+    z-index: 2
+
+  .big-text
+    position: absolute
+    top: -20%
+    left: -5%
+    color: $primary-color
+    //color: lighten($primary-color, 3%)
+
+  h1.giant
+    font-family: roboto
+    font-size: 200px
+    font-weight: 800
+    line-height: .5em
+
+  p
+    font-size: 17px
+    margin-right: 10px
+    color: black
+
+
+  li
+    list-style: none
+    font-weight: 500
+
+  h2
+    font-family: 'Roboto', sans-serif
+    margin-left: -10%
+    font-size: 32px
+    font-weight: 900
+
+  .indent
+    text-indent: 15px
+
+  .list-box
+    display: flex
+
+  img
+    margin-top: -150px
+    margin-right: -800px
+
+
+@media (max-width: 950px)
+  section.blue
+    img
+      display: none
+
+    .blue-content
+      left: 10%
+      max-width: 80%
+
+    .big-text
+      display: none
+@media (max-width: 600px)
+  section.blue

@@ -1,0 +1,45 @@
+section.recent-work
+  position: relative
+  height: 70vh
+  flex-direction: row
+  justify-content: center
+  background: $primary-color
+  margin-top: -7px
+
+  .work-box
+    display: flex
+    position: relative
+    width: 50%
+    padding: 60px
+
+  .img-container
+  	flex:1
+  	margin: -10px
+  	padding: -10px
+    @include box_shadow(2)
+
+  img
+  	margin: 0
+  	padding: 0
+  	width: 100%
+  	height: auto
+  	border: 2px solid white
+  	border-radius: 2px
+
+  img
+    -webkit-filter: grayscale(100%)
+    filter: grayscale(100%)
+    transition: all .15s ease-in-out
+
+
+
+
+
+
+
+    @media (max-width: 600px)
+    	section.recent-work
+    		flex-direction: column
+
+    		.work-box
+    			height: 150px

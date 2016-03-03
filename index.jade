@@ -1,0 +1,163 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(name='description', content='')
+		meta(name='author', content='')
+		
+		link(href='https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300', rel='stylesheet', type='text/css')
+		link(href='assets/css/main.css', rel='stylesheet', type='text/css')
+		link(href='assets/css/font-awesome.css', rel='stylesheet', type='text/css')
+		script(src='https://use.typekit.net/xcd3zen.js')
+		script.
+				try{Typekit.load({ async: true });}catch(e){}
+
+	mixin work-img(link, img)
+		a(href="#{link}").portfolio-image-link
+			img(src="/assets/img/#{img}")
+			
+	mixin nav-content()
+		ul
+			li: a(href="#") About
+			li: a(href="#") Services
+			li: a(href="#") About
+			li: a(href="#") About
+			li: a(href="#contact") Contact
+	
+	body
+		.nav
+			.hamburger-menu
+				.bar
+			.overlay
+				.overlay-text
+					+nav-content()
+			
+		//.navbar
+		.header
+			video(poster='', autoplay='true', loop='')
+				source(src='/assets/keyboard.mp4', type='video/mp4')
+				source(src='/assets/keyboard.webm', type='video/webm')
+			.text
+			//.secondary-text
+				h2 Web Developer/Pixel Pusher
+			//p Why? before we first do anything we must first ask why.  We must constantly be looking ahead. Strive to make each work your best work.  
+		
+		
+		section.responsive.flex
+			.center-box.flex
+				.text-box
+					h2 Clean/Responsive Designs
+					p I despise bottom scroll bars. I create responsive websites that allow the user to experience your website in the best and most appropriate way suited to the device they are using. By working using progressive enhancement, your website is delivered with a responsive layout that can best make use of the space available on the smallest to largest devices. 
+				.right-side
+					//img(src='/assets/img/nextbit.png')
+		section.blue
+			svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 50 50', preserveaspectratio='none')
+				polygon(points='-85,25 50,50 50,0', fill='#00B2E2')
+			
+			.blue-content
+				h2 < CODING >
+				p I love problem solving. My front-end build process involves the use of tools such as Sass, Jade, Gulp, Bower, and NPM to speed up development.
+				.list-box
+					.flex-1
+						ul
+							li Front End Development
+							li HTML / Jade
+							li CSS / SASS
+							li Java / Jquery
+							li Github
+						
+					.flex-1
+						ul
+							li Front End Development
+							li HTML Newsletters
+							li Weebly
+							li Bootstrap
+							li Wordpress
+							Li Squarespace
+			.big-text
+				h1.giant CODING
+
+				img(src='/assets/img/jadetop.png')
+				
+		section.explore
+			.text-box
+				h2 < / RECENT-PROJECTS >
+				p I am well versed in the Adobe Creative Suite. Sudoku, golf, branding I have great understanding on SEO principles. web page optimization techniques. understanding of cross-browser compatibility issues
+			.work-box
+				.img-container.flex-1
+					a(href="#")
+						img(src='/assets/img/csa-mock.jpg')
+				.img-container.flex-1
+					a(href="#")
+						img(src='/assets/img/m2-mock.jpg')
+				.img-container.flex-1
+					a(href="#")
+						img(src='/assets/img/csa-mock.jpg')
+			//.photoshop.flex-1.flex
+				//img(src='/assets/img/screenshot (4).png')
+
+				
+		section.sides.flex#contact
+			.left-half
+				img.profile(src='/assets/img/evan-bw.png')
+			.right-half.flex
+				.top.flex-2
+					h2 Contact Me
+					i.fa.fa-phone.fa-3x (912)253-8070
+					i.fa.fa-envelope-o.fa-3x eped22@gmail.com
+				.bottom.flex.flex-3
+					a(href="https://www.linkedin.com/in/evan-pedrick-241833a0" target="_blank").side-left.flex-1.flex
+						.img-wrapper
+					a(href="https://github.com/eped22" target="_blank").side-center.flex-1
+						.img-wrapper
+					a(href="https://www.behance.net/evanp" target="_blank").side-right.flex-1
+						.img-wrapper
+					
+		//section.foot.flex
+			//.left-side
+			//.right-side
+				//.text-box
+					//h2 About Me
+						
+					//p I played baseball my whole life so I feel naked without a hat on, I love problem solving, I'm not too big on the whole sleep thing, and I take a lot of pride in everything that I do.
+		
+		//section.footer
+		script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+
+		script(type='text/javascript', src='/assets/js/functions.js')
+		
+		
+		
+		
+		//section.work
+			.container.strips
+				.col
+					.top-work
+				.col-photo
+					.photo					
+		
+		//svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 50 50', preserveaspectratio='none')
+			polygon(points='0,50 50,50 50,40', fill='#00B2E2')
+		//section.portfolio.flex
+			.big-text
+				h1.giant LATEST
+			.side-1.flex
+				.img-container
+					+work-img('#', 'meep.jpg')
+					+work-img('#', 'mac.jpg')
+					+work-img('#', 'mason-ipad.jpg')
+				.img-container
+					+work-img('#', 'ipad.jpg')
+					+work-img('#', 'jj-sign.jpg')
+					+work-img('#', 'm2-website.jpg')
+				.img-container
+					+work-img('#', 'email.jpg')
+					+work-img('#', 'bbq.jpg')
+					+work-img('#', 'logo-m2.jpg')
+			.side-2
+				.text-card
+					h2 My Portfolio Work
+		//svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 50 50', preserveaspectratio='none')
+			polygon(points='-85,0 50,10 50,-20', fill='#00B2E2')

@@ -1,0 +1,85 @@
+section.sides
+  height: 100vh
+  flex-direction: row
+  margin-top: -7px
+  overflow: hidden
+
+
+  .left-half
+    flex: 1
+    flex-direction: column
+    background:
+      color: $primary-color
+
+  .profile
+    border-radius: 50%
+
+  .right-half
+    flex: 1
+    flex-direction: column
+    @include box_shadow(4)
+
+    .top
+      background:
+        image: url(/assets/img/contact.jpg)
+        size: cover
+        repeat: no-repeat
+      text-align: center
+      font-family: roboto
+      padding-top: 5%
+
+    .bottom
+      display: flex
+      flex-direction: row
+      min-height: 60px
+
+    .side-left
+      align-items: center
+      justify-content: center
+      background:
+        image:  url(/assets/img/linkedin-logo.png), url(/assets/img/linkedin-back.jpg)
+        position: center, center
+        size: 35%, cover
+        repeat: no-repeat, no-repeat
+
+
+    .side-center
+      align-items: center
+      justify-content: center
+      background:
+        image:  url(/assets/img/github.png), url(/assets/img/github.jpg)
+        position: center, center
+        size: 35%, cover
+        repeat: no-repeat, no-repeat
+
+    .side-right
+      align-items: center
+      justify-content: center
+      background:
+        image:  url(/assets/img/behance-logo-white.png), url(/assets/img/behance.png)
+        position: center, center
+        size: 40%, cover
+        repeat: no-repeat, no-repeat
+
+    h2
+      font-size: 100px
+      line-height: .8em
+      padding: 0
+      margin: 0
+
+    a
+      width: 100%
+      padding: 0
+      margin: 0
+
+@media (max-width: 780px)
+  section.sides
+    height: auto
+    flex-direction: column
+
+@media (max-width: 420px)
+  section.sides
+
+    .right-half
+      h2
+        font-size: 50px
