@@ -10,9 +10,6 @@ html
 		link(href='https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300', rel='stylesheet', type='text/css')
 		link(href='assets/css/main.css', rel='stylesheet', type='text/css')
 		link(href='assets/css/font-awesome.css', rel='stylesheet', type='text/css')
-		script(src='https://use.typekit.net/xcd3zen.js')
-		script.
-				try{Typekit.load({ async: true });}catch(e){}
 
 	mixin work-img(link, img)
 		a(href="#{link}").portfolio-image-link
@@ -20,10 +17,10 @@ html
 			
 	mixin nav-content()
 		ul
-			li: a(href="#") About
-			li: a(href="#") Services
-			li: a(href="#") About
-			li: a(href="#") About
+			li: a(href="#home") Home
+			li: a(href="#about") About
+			li: a(href="#skills") Coding
+			li: a(href="#work") Recent Work
 			li: a(href="#contact") Contact
 	
 	body
@@ -34,26 +31,24 @@ html
 				.overlay-text
 					+nav-content()
 
-		.header
+		.header#home
 			video(poster='', autoplay='true', loop='')
 				source(src='/assets/keyboard.mp4', type='video/mp4')
 				source(src='/assets/keyboard.webm', type='video/webm')
 			.text
-				h2 Web Developer/Pixel Pusher
 		
-		
-		section.responsive.flex
+		section.responsive.flex#about
 			.center-box.flex
 				.text-box
 					h2 Clean/Responsive Designs
 					p I despise bottom scroll bars. I create responsive websites that allow the user to experience your website in the best and most appropriate way suited to the device they are using. By working using progressive enhancement, your website is delivered with a responsive layout that can best make use of the space available on the smallest to largest devices. 
 				.right-side
-					img(src='/assets/img/blue-phone.png')
+
 		section.blue
 			svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 50 50', preserveaspectratio='none')
 				polygon(points='-85,25 50,50 50,0', fill='#00B2E2')
 			
-			.blue-content
+			.blue-content#skills
 				h2 < CODING >
 				p I love problem solving. My front-end build process involves the use of tools such as Sass, Jade, Gulp, Bower, and NPM to speed up development.
 				.list-box
@@ -78,7 +73,7 @@ html
 
 				img(src='/assets/img/jadetop.png')
 				
-		section.explore
+		section.explore#work
 			.text-box
 				h2 < / RECENT-PROJECTS >
 				p I am well versed in the Adobe Creative Suite. Sudoku, golf, branding I have great understanding on SEO principles. web page optimization techniques. understanding of cross-browser compatibility issues
@@ -110,49 +105,6 @@ html
 					a(href="https://www.behance.net/evanp" target="_blank").side-right.flex-1
 						.img-wrapper
 					
-		//section.foot.flex
-			//.left-side
-			//.right-side
-				//.text-box
-					//h2 About Me
-						
-					//p I played baseball my whole life so I feel naked without a hat on, I love problem solving, I'm not too big on the whole sleep thing, and I take a lot of pride in everything that I do.
-		
-		//section.footer
 		script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
 
 		script(type='text/javascript', src='/assets/js/functions.js')
-		
-		
-		
-		
-		//section.work
-			.container.strips
-				.col
-					.top-work
-				.col-photo
-					.photo					
-		
-		//svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 50 50', preserveaspectratio='none')
-			polygon(points='0,50 50,50 50,40', fill='#00B2E2')
-		//section.portfolio.flex
-			.big-text
-				h1.giant LATEST
-			.side-1.flex
-				.img-container
-					+work-img('#', 'meep.jpg')
-					+work-img('#', 'mac.jpg')
-					+work-img('#', 'mason-ipad.jpg')
-				.img-container
-					+work-img('#', 'ipad.jpg')
-					+work-img('#', 'jj-sign.jpg')
-					+work-img('#', 'm2-website.jpg')
-				.img-container
-					+work-img('#', 'email.jpg')
-					+work-img('#', 'bbq.jpg')
-					+work-img('#', 'logo-m2.jpg')
-			.side-2
-				.text-card
-					h2 My Portfolio Work
-		//svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 50 50', preserveaspectratio='none')
-			polygon(points='-85,0 50,10 50,-20', fill='#00B2E2')
