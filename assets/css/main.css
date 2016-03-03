@@ -936,6 +936,34 @@ section.sides .right-half .top {
   padding-top: 5%;
 }
 
+section.sides .right-half .top .contact-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: roboto;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-left: 10%;
+  line-height: 0;
+}
+
+section.sides .right-half .top .contact-info i {
+  padding-right: 1%;
+  color: #444444;
+}
+
+section.sides .right-half .top .contact-info p {
+  font-size: 30px;
+  display: inline;
+  padding-left: 10%;
+}
+
 section.sides .right-half .bottom {
   display: -webkit-box;
   display: -webkit-flex;
