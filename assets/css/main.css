@@ -539,7 +539,11 @@ input[type="button"]:focus {
   font-family: roboto;
   font-size: 50px;
   font-weight: 900;
-  line-height: .8em;
+  line-height: 1.1em;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 10%;
+  margin: 0;
 }
 
 .nav .overlay.open {
@@ -549,6 +553,9 @@ input[type="button"]:focus {
 .nav a, .nav ul, .nav li {
   text-decoration: none;
   list-style-type: none;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
 }
 
 .nav a:hover, .nav ul:hover, .nav li:hover {
