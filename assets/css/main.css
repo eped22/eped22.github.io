@@ -656,11 +656,14 @@ section.responsive {
 .center-box h2 {
   padding-left: 5%;
   padding-top: 8%px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .center-box p {
   margin-left: 8%;
   padding-top: 1%;
+  margin-top: 0;
 }
 
 .center-box img {
