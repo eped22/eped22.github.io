@@ -8,11 +8,43 @@ section.sides
   .left-half
     flex: 1
     flex-direction: column
+    justify-content: center
+    text-align: center
+    padding-left: 5%
+    padding-right: 5%
     background:
-      color: $primary-color
+      image: url(/assets/img/contact.jpg)
+      size: cover
+      repeat: no-repeat
+
+  .input-group
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+    input
+    	height: 40px
+    	padding: 0
+    	font-size: 30px
+    	font-weight: 200
+    	color: black
+    	background: rgba(0,178,226,.6)
+    	border: 1px solid rgba(0,178,226,.9)
+    	@include box_shadow(3)
+
+
+  h3
+    font-size: 22px
+
+  p
+    margin-left: 5%
+    margin-right: 5%
+    color: black
 
   .profile
     border-radius: 50%
+    width: 20%
+    margin-top: 2%
 
   .right-half
     flex: 1
@@ -20,10 +52,7 @@ section.sides
     @include box_shadow(4)
 
     .top
-      background:
-        image: url(/assets/img/contact.jpg)
-        size: cover
-        repeat: no-repeat
+      background: white
       text-align: center
       font-family: roboto
       padding-top: 5%

@@ -452,7 +452,7 @@ input[type="button"]:focus {
   top: 0;
   right: 0;
   bottom: 0;
-  padding-top: 5%;
+  padding-top: 2%;
   padding-right: 5%;
   width: 60px;
   height: 38px;
@@ -920,11 +920,59 @@ section.sides .left-half {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #00B2E2;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-image: url(/assets/img/contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section.sides .input-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.sides .input-group input {
+  height: 40px;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 200;
+  color: black;
+  background: rgba(0, 178, 226, 0.6);
+  border: 1px solid rgba(0, 178, 226, 0.9);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+section.sides h3 {
+  font-size: 22px;
+}
+
+section.sides p {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: black;
 }
 
 section.sides .profile {
   border-radius: 50%;
+  width: 20%;
+  margin-top: 2%;
 }
 
 section.sides .right-half {
@@ -941,9 +989,7 @@ section.sides .right-half {
 }
 
 section.sides .right-half .top {
-  background-image: url(/assets/img/contact.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: white;
   text-align: center;
   font-family: roboto;
   padding-top: 5%;
