@@ -10,6 +10,7 @@ html
 		link(href='https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300', rel='stylesheet', type='text/css')
 		link(href='assets/css/main.css', rel='stylesheet', type='text/css')
 		link(href='assets/css/font-awesome.css', rel='stylesheet', type='text/css')
+		//link(href='assets/css/materialize.css', rel='stylesheet', type='text/css')
 
 	mixin work-img(link, img)
 		a(href="#{link}").portfolio-image-link
@@ -87,26 +88,78 @@ html
 				.img-container.flex-1
 					a(href="#")
 						img(src='/assets/img/csa-mock.jpg')
+		//.pop-overlay.red
+			.description
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.
+			.card-container
+				.card.flex-1
+					.card-image.waves-effect.waves-block.waves-light
+						img.activator(src='/assets/img/logo-m2.jpg')
+					.card-content
+						span.card-title.activator.grey-text.text-darken-4
+							| Logo Creation
+						p
+							a(href='#') This is a link
+					.card-reveal
+						span.card-title.grey-text.text-darken-4
+							| UI Design
+							i.material-icons.right close
+						p
+							| Here is some more information about this product that is only revealed once clicked on.
+				.card.flex-1
+					.card-image.waves-effect.waves-block.waves-light
+						img.activator(src='/assets/img/m2-website.jpg')
+					.card-content
+						span.card-title.activator.grey-text.text-darken-4
+							| UI Design
+						p
+							a(href='#') This is a link
+					.card-reveal
+						span.card-title.grey-text.text-darken-4
+							| Card Title
+							i.material-icons.right close
+						p
+							| Here is some more information about this product that is only revealed once clicked on.
+				.card.flex-1
+					.card-image.waves-effect.waves-block.waves-light
+						img.activator(src='/assets/img/csa-mock.jpg')
+					.card-content
+						span.card-title.activator.grey-text.text-darken-4
+							| Finished Project
+						p
+							a(href='#') This is a link
+					.card-reveal
+						span.card-title.grey-text.text-darken-4
+							| Card Title
+							i.material-icons.right close
+						p
+							| Here is some more information about this product that is only revealed once clicked on.
 
 				
 		section.sides.flex#contact
 			.left-half
-				h2 Contact Me
-				br
-				.input-group.flex
-					input
-					input
-				.contact-info.flex-1
-					i.fa.fa-phone.fa-2x 
-					p (912)253-8070
-				.contact-info.flex-1
-					i.fa.fa-envelope-o.fa-2x 
-					p eped22@gmail.com
-			.right-half.flex
-				.top.flex-2
+				.inner.paper
 					img(src='/assets/img/evan-square-blue.jpg').profile
 					h3 About Me
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					p Playing baseball my whole life impacted my life in a lot of ways. A strong work ethic, the ability to work with a team, and a fear of not wearing a hat. I am well versed in the Adobe Creative Suite. Sudoku, golf, branding I have great understanding on SEO principles. web page optimization techniques. understanding of cross-browser compatibility issues.  I'm not too keen on the whole sleep thing and it's pretty obvious because it has taken far too long to work on this section and it is currently 4:45 a.m. but I'll take a power nap and be good to go by 9 and hopefully kelsey wont forget to text me this morning so I won't have to wonder if everything is okay.
+				.contact-area.flex
+					.contact-info.flex-1
+						i.fa.fa-phone.fa-2x 
+						p (912)253-8070
+					.contact-info.flex-1
+						i.fa.fa-envelope-o.fa-2x 
+						p eped22@gmail.com
+			.right-half.flex
+				.top.flex-2
+					h2 Contact Me
+					.inner
+						.input-group.flex
+							input
+							input
+						.input-group.flex
+							input
+						.input-group.flex
+							input
 				.bottom.flex.flex-3
 					a(href="https://www.linkedin.com/in/evan-pedrick-241833a0" target="_blank").side-left.flex-1.flex
 						.img-wrapper
@@ -118,3 +171,4 @@ html
 		script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
 
 		script(type='text/javascript', src='/assets/js/functions.js')
+		script(type='text/javascript', src='/assets/js/materialize.min.js')

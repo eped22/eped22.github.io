@@ -587,7 +587,7 @@ input[type="button"]:focus {
 .header .text {
   z-index: 2;
   position: absolute;
-  background-image: url(/assets/img/evan-cut.svg);
+  background-image: url(/assets/img/evan-cutout-ps.svg);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -899,6 +899,54 @@ section.explore p {
   }
 }
 
+.pop-overlay {
+  position: fixed;
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 14;
+}
+
+.red {
+  background: rgba(255, 0, 0, 0.95);
+  color: white;
+}
+
+.red .card-container {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.red .card-container .card {
+  margin: 1%;
+}
+
 section.sides {
   height: 100vh;
   -webkit-box-orient: horizontal;
@@ -908,6 +956,26 @@ section.sides {
           flex-direction: row;
   margin-top: -7px;
   overflow: hidden;
+}
+
+section.sides h2 {
+  font-size: 75px;
+  line-height: .8em;
+  padding: 2%;
+  margin: 0;
+  color: rgba(103, 103, 103, 0.9);
+}
+
+section.sides h3 {
+  font-size: 22px;
+  color: black;
+}
+
+section.sides p {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 10%;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 section.sides .left-half {
@@ -920,16 +988,28 @@ section.sides .left-half {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: left;
+  position: relative;
+  background-color: white;
+  background-image: url(/assets/img/contact-me-2.jpg);
+  background-opacity: 0.1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+section.sides .inner {
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
-  background-image: url(/assets/img/contact.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+section.sides .paper {
+  background: white;
+  border-radius: 4px;
+  margin: 5%;
+  padding-top: 2%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 section.sides .input-group {
@@ -946,27 +1026,42 @@ section.sides .input-group {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 10px;
 }
 
 section.sides .input-group input {
-  height: 40px;
+  height: 50px;
   padding: 0;
   font-size: 30px;
   font-weight: 200;
   color: black;
-  background: rgba(0, 178, 226, 0.6);
-  border: 1px solid rgba(0, 178, 226, 0.9);
+  color-display: block;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.9);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-section.sides h3 {
-  font-size: 22px;
+section.sides .input-group input {
+  width: 100%;
 }
 
-section.sides p {
-  margin-left: 5%;
-  margin-right: 5%;
-  color: black;
+section.sides .contact-area {
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+section.sides .contact-area i {
+  color: white;
+}
+
+section.sides .contact-area p {
+  color: white;
 }
 
 section.sides .profile {
@@ -989,13 +1084,21 @@ section.sides .right-half {
 }
 
 section.sides .right-half .top {
-  background: white;
+  background-image: url(/assets/img/contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   font-family: roboto;
   padding-top: 5%;
 }
 
-section.sides .right-half .top .contact-info {
+section.sides .right-half .top .inner {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+section.sides .right-half .top .input-group {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1005,22 +1108,46 @@ section.sides .right-half .top .contact-info {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-family: roboto;
-  font-size: 25px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 10px;
-  padding-left: 10%;
-  line-height: 0;
 }
 
-section.sides .right-half .top .contact-info i {
-  padding-right: 1%;
-  color: #444444;
-}
-
-section.sides .right-half .top .contact-info p {
+section.sides .right-half .top .input-group input {
+  height: 50px;
+  padding: 0;
   font-size: 30px;
-  display: inline;
-  padding-left: 10%;
+  font-weight: 200;
+  color: black;
+  color-display: block;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+section.sides .right-half .top .input-group input {
+  width: 100%;
+}
+
+section.sides .right-half .top .contact-area {
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+section.sides .right-half .top .contact-area i {
+  color: white;
+}
+
+section.sides .right-half .top .contact-area p {
+  color: white;
 }
 
 section.sides .right-half .bottom {
@@ -1079,13 +1206,6 @@ section.sides .right-half .side-right {
   background-position: center, center;
   background-size: 40%, cover;
   background-repeat: no-repeat, no-repeat;
-}
-
-section.sides .right-half h2 {
-  font-size: 100px;
-  line-height: .8em;
-  padding: 0;
-  margin: 0;
 }
 
 section.sides .right-half a {
