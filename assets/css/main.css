@@ -587,7 +587,7 @@ input[type="button"]:focus {
 .header .text {
   z-index: 2;
   position: absolute;
-  background-image: url(/assets/img/evan-cutout-ps.svg);
+  background-image: url(../img/evan-cutout-ps.svg);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
