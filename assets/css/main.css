@@ -824,10 +824,8 @@ section.explore .skills-content {
   width: 70%;
   margin: 0 auto;
   padding-top: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 20vh;
   text-align: left;
-  background: white;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 section.explore .skills-title {
@@ -860,6 +858,7 @@ section.explore .work-container .work-images {
           flex: auto;
   width: 200px;
   margin: .5vw;
+  padding-bottom: 10vh;
 }
 
 section.explore .work-container .work-images img {
