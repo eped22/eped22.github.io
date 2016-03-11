@@ -1,0 +1,62 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0')
+		meta(name='description', content='')
+		meta(name='author', content='Evan Pedrick')
+
+		link(href='https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300', rel='stylesheet', type='text/css')
+		link(href='assets/css/main.css', rel='stylesheet', type='text/css')
+		link(href='assets/css/font-awesome.css', rel='stylesheet', type='text/css')
+
+	mixin nav-content()
+		ul
+			li: a(href="index.html#home") Home
+			li: a(href="index.html#about") Design
+			li: a(href="index.html#skills") Coding
+			li: a(href="index.html#work") Recent Work
+			li: a(href="index.html#contact") Contact
+			li: a(href="about-me.html") About Me
+
+	body
+		.nav
+			.hamburger-menu
+				.bar
+			.overlay
+				.overlay-text
+					+nav-content()
+
+		section.about-header
+			.top
+				.left-side.flex-1
+					.evan
+						img(src='/assets/img/evan-poly.png', alt='').image-contain
+					
+				.right-side.flex-1
+					.text
+						h1 About Me
+						p Hi I’m Evan, an analytical thinker that loves to find solutions. I played baseball growing up and through college. While I’m all washed up on the diamond, and begining to grow suspicious that my golf game may not be far behind, the fire to compete and improve is still burning strong. I love the team dynamic of working with people and take a lot of pride in my work.
+						
+			.middle
+				h2 Skills
+				.skills
+					.flex-1
+						h3 Languages
+						p CSS, SASS, HTML5, JADE, English, JavaScript
+					.flex-1
+						h3 Frameworks
+						p Bootstrap, FlexBox, Foundation
+					.flex-1
+						h3 Tools
+						p Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Github
+					.flex-1
+						h3 Misc.
+						p UX/UI, SEO, GOLF, API Integration, Logo Design, Web Page Optimization, HTML emails
+						
+						
+		script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+
+		script(type='text/javascript', src='/assets/js/functions.js')
+		script(type='text/javascript', src='/assets/js/materialize.min.js')

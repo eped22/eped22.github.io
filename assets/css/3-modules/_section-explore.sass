@@ -1,36 +1,22 @@
 section.explore
 	min-height: 120vh
 	padding-top: 20vh
-	background:
-		image: url(/assets/img/pens.png)
+	margin-bottom: 20vh
+	background: white
+		//image: url(/assets/img/pens.png)
 		size: cover
 		repeat: no-repeat
 	color: black
 	text-align: center
-
-	.skills-content
-		width: 70%
-		margin: 0 auto
-		padding-top: 20px
-		margin-bottom: 20vh
-		text-align: left
-
-	.skills-title
-		padding-left: 5%
-		padding-right: 10%
-
-	.skills-text
-		text-align: left
-		padding-left: 13%
-		padding-right: 13%
 
 	.text-box
 		padding-bottom: 1%
 
 	.work-container
 		display: flex
-		padding: .5vh
+		padding: 8vh
 		padding-top: 0
+		padding-bottom: 0
 
 		.work-images
 			flex: auto
@@ -73,6 +59,10 @@ section.explore
 @media (max-width: 500px)
 	section.explore
 		height: auto
+		padding-top: 35vh
+
+		h2
+			font-size: 25px
 
 		.text-box
 			padding-bottom: 3%
@@ -83,3 +73,13 @@ section.explore
 
 		.img-container
 			height: 100%
+
+		.work-container
+			flex-direction: column
+			padding: 0
+			justify-content: center
+
+			.work-images
+				width: 100%
+				margin-left: 0
+				margin-right: 0

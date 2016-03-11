@@ -1,0 +1,44 @@
+section.about-header
+	height: 100vh
+
+	.top
+		display: flex
+		flex-direction: row
+
+		.left-side
+			background: white
+
+			.evan
+				margin-top: 20vh
+				text-align: center
+
+				.image-contain
+					width: 30%
+
+		.right-side
+			background: white
+
+			.text
+				margin-top: 20vh
+				margin-left: 1vw
+				margin-right: 15vw
+
+	.middle
+		text-align: center
+		margin: 10vh 12vw 0 12vw
+
+		.skills
+			display: flex
+			flex-direction: row
+
+@media (max-width: 900px)
+	section.about-header
+		.middle
+			margin: 5vh 8vw 0 8vw
+			.skills
+
+@media (max-width: 600px)
+	section.about-header
+		.middle
+			.skills
+				flex-direction: column

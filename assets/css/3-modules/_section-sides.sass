@@ -8,7 +8,7 @@ section.sides
   h2
     font-size: 75px
     line-height: .8em
-    padding: 2%
+    padding-bottom: 5vh
     margin: 0
     color: rgba(#676767, .9)
 
@@ -21,31 +21,6 @@ section.sides
     margin-right: 5%
     padding-bottom: 10%
     color: rgba(black, .9)
-
-  .left-half
-    flex: 1
-    flex-direction: column
-    text-align: left
-    position: relative
-    background:
-      color: white
-      image: url(/assets/img/contact-me.jpg)
-      opacity: 0.1
-      size: cover
-      repeat: no-repeat
-      position: right center
-
-  .inner
-    text-align: center
-    padding-left: 5%
-    padding-right: 5%
-
-  .paper
-    background: white
-    border-radius: 4px
-    margin: 5%
-    padding-top: 2%
-    @include box_shadow (2)
 
   .input-group
     display: flex
@@ -75,12 +50,6 @@ section.sides
       bottom: 0
       padding-top: 20vh
 
-      i
-        color: $primary-color
-
-      p
-        color: black
-
   .profile
     width: 30%
     margin-top: 2%
@@ -88,7 +57,6 @@ section.sides
   .right-half
     flex: 1
     flex-direction: column
-    @include box_shadow(4)
 
     .top
       background:
@@ -97,12 +65,12 @@ section.sides
         repeat: no-repeat
       text-align: center
       font-family: roboto
-      padding-top: 5%
+      padding-top: 5vh
 
       .inner
         text-align: center
-        padding-left: 5%
-        padding-right: 5%
+        padding-left: 20vw
+        padding-right: 20vw
 
       .input-group
         display: flex
@@ -111,7 +79,7 @@ section.sides
         padding-top: 10px
 
         input
-        	height: 50px
+        	height: 8vh
         	padding: 0
         	font-size: 30px
         	font-weight: 200
@@ -131,13 +99,6 @@ section.sides
         position: absolute
         bottom: 0
 
-        i
-          color: white
-
-        p
-          color: white
-
-
     .bottom
       display: flex
       flex-direction: row
@@ -149,7 +110,7 @@ section.sides
       background:
         image:  url(/assets/img/linkedin-logo.png), url(/assets/img/linkedin-back.jpg)
         position: center, center
-        size: 35%, cover
+        size: 20%, cover
         repeat: no-repeat, no-repeat
 
 
@@ -159,7 +120,7 @@ section.sides
       background:
         image:  url(/assets/img/hub.png), url(/assets/img/github.jpg)
         position: center, center
-        size: 35%, cover
+        size: 20%, cover
         repeat: no-repeat, no-repeat
 
     .side-right
@@ -168,7 +129,7 @@ section.sides
       background:
         image:  url(/assets/img/behance-logo-white.png), url(/assets/img/behance.png)
         position: center, center
-        size: 40%, cover
+        size: 25%, cover
         repeat: no-repeat, no-repeat
 
     a
@@ -187,3 +148,8 @@ section.sides
     .right-half
       h2
         font-size: 50px
+
+		.input-group
+
+			input
+				height: 6vh
