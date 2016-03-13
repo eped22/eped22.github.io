@@ -19,7 +19,7 @@ html
 	mixin nav-content()
 		ul
 			li: a(href="#home") Home
-			li: a(href="#about") About
+			li: a(href="#about") Design
 			li: a(href="#skills") Coding
 			li: a(href="#work") Recent Work
 			li: a(href="#contact") Contact
@@ -147,13 +147,13 @@ html
 				.top.flex-3
 					h2 Contact Me
 					.inner
-						.input-group.flex
-							input
-							input
-						.input-group.flex
-							input
-						.input-group.flex
-							input
+						form(action='MAILTO:eped22@gmail.com', method='post', enctype='text/plain')
+							.input-group.flex
+								input(type="text" placeholder="First")
+								input(type="text" placeholder="Last")
+							.input-group.flex
+								input(type="text" placeholder="Message")
+								
 				.bottom.flex.flex-1
 					a(href="https://www.linkedin.com/in/evan-pedrick-241833a0" target="_blank").side-left.flex-1.flex
 						.img-wrapper

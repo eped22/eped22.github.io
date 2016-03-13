@@ -757,7 +757,7 @@ section.blue .big-text {
 }
 
 section.blue h1.giant {
-  font-family: roboto;
+  font-family: 'Roboto';
   font-size: 200px;
   font-weight: 800;
   line-height: .5em;
@@ -855,8 +855,10 @@ section.explore h1 {
 }
 
 section.explore h2 {
+  font-family: 'Roboto';
   font-size: 35px;
   line-height: .8em;
+  font-weight: 900;
 }
 
 section.explore h3 {
@@ -1019,19 +1021,37 @@ section.sides .input-group {
 }
 
 section.sides .input-group input {
-  height: 50px;
+  height: 8vh;
   padding: 0;
   font-size: 30px;
   font-weight: 200;
   color: black;
   color-display: block;
-  background: rgba(255, 255, 255, 0.5);
-  border: 2px solid rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid rgba(255, 255, 255, 0.99);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 section.sides .input-group input {
   width: 100%;
+}
+
+section.sides .input-group input[type="text"] {
+  white-space: normal;
+}
+
+section.sides .input-group input.large {
+  height: 40vh;
+}
+
+section.sides .input-group input.large[type="text"] {
+  white-space: pre-wrap;
+}
+
+section.sides .input-group input::-webkit-input-placeholder {
+  font-family: 'roboto';
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 section.sides .input-group .contact-area {
@@ -1076,39 +1096,6 @@ section.sides .right-half .top .inner {
   text-align: center;
   padding-left: 20vw;
   padding-right: 20vw;
-}
-
-section.sides .right-half .top .input-group {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 10px;
-}
-
-section.sides .right-half .top .input-group input {
-  height: 8vh;
-  padding: 0;
-  font-size: 30px;
-  font-weight: 200;
-  color: black;
-  color-display: block;
-  background: rgba(255, 255, 255, 0.5);
-  border: 2px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
-
-section.sides .right-half .top .input-group input {
-  width: 100%;
 }
 
 section.sides .right-half .top .contact-area {
@@ -1276,6 +1263,14 @@ section.about-header {
   height: 100vh;
 }
 
+section.about-header h1 {
+  font-size: 45px;
+  font-weight: 300;
+  color: black;
+  line-height: .5em;
+  padding: 0;
+}
+
 section.about-header .top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1293,7 +1288,7 @@ section.about-header .top .left-side {
 }
 
 section.about-header .top .left-side .evan {
-  margin-top: 20vh;
+  margin-top: 18vh;
   text-align: center;
 }
 
@@ -1326,6 +1321,8 @@ section.about-header .middle .skills {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: 900px) {

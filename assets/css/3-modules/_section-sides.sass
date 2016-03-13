@@ -29,18 +29,34 @@ section.sides
     padding-top: 10px
 
     input
-    	height: 50px
+    	height: 8vh
     	padding: 0
     	font-size: 30px
     	font-weight: 200
     	color: black
       display: block
-    	background: rgba(white, .5)
-    	border: 2px solid rgba(white,.9)
+    	background: rgba(white,.7)
+    	border: 2px solid rgba(white,.99)
     	@include box_shadow(3)
 
     input
       width: 100%
+
+      &[type="text"]
+        //flex: 1
+        white-space: normal
+
+    input.large
+      height: 40vh
+
+      &[type="text"]
+        //flex: 1
+        white-space: pre-wrap
+
+    input::-webkit-input-placeholder
+      font-family: 'roboto'
+      font-weight: 300
+      color: rgba(black,.8)
 
     .contact-area
       width: 100%
@@ -71,26 +87,6 @@ section.sides
         text-align: center
         padding-left: 20vw
         padding-right: 20vw
-
-      .input-group
-        display: flex
-        flex-direction: row
-        justify-content: center
-        padding-top: 10px
-
-        input
-        	height: 8vh
-        	padding: 0
-        	font-size: 30px
-        	font-weight: 200
-        	color: black
-          display: block
-        	background: rgba(white, .5)
-        	border: 2px solid rgba(white,.9)
-        	@include box_shadow(3)
-
-        input
-          width: 100%
 
       .contact-area
         width: 100%
