@@ -1,0 +1,33 @@
+section.top
+	height: 75vh
+	background: yellow
+
+.description
+	display: flex
+	height: 50vh
+	padding: 0 20vw 0 20vw
+
+	.text
+		flex: 1
+
+section.explore.portfolio
+	.work-container
+		display: flex
+		padding: 8vh
+		padding-top: 0
+		padding-bottom: 0
+
+		.work-images
+			flex: auto
+			width: 200px
+			margin: .5vw
+
+			img
+				width: 35%
+				height: auto
+				@include box_shadow (0)
+
+		.work-images.big
+
+			img
+				width: 85%
