@@ -1388,7 +1388,8 @@ section.explore.portfolio .work-container .work-images img {
 }
 
 section.explore.portfolio .work-container .work-images.big img {
-  width: 85%;
+  height: 95vh;
+  width: auto;
 }
 
 section.top.csa {
