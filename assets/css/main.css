@@ -882,16 +882,6 @@ section.explore p {
 
 @media (max-width: 800px) {
   section.explore {
-    height: 70vh;
-  }
-  section.explore .work-box {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-
-@media (max-width: 500px) {
-  section.explore {
     height: auto;
     padding-top: 35vh;
   }
@@ -1384,7 +1374,7 @@ section.explore.portfolio .work-container .work-images.big img.drop {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 870px) {
   section.explore.portfolio .work-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
