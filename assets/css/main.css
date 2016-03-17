@@ -570,7 +570,7 @@ input[type="button"]:focus {
 }
 
 .header {
-  background: white;
+  background: #00B2E2;
   height: 100vh;
   padding: 0;
   position: relative;
