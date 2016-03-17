@@ -35,3 +35,29 @@ section.explore.portfolio
 
 			img.drop
 				@include box_shadow (2)
+
+@media (max-width: 500px)
+	section.explore.portfolio
+
+		.work-container
+			flex-direction: column
+			padding: 0
+			justify-content: center
+
+			.work-images
+				width: 100%
+				margin-left: 0
+				margin-right: 0
+
+				img
+					width: 100%
+					height: auto
+
+			.work-images.big
+				width: 100%
+				margin-left: 0
+				margin-right: 0
+
+				img
+					width: 100%
+					height: auto
