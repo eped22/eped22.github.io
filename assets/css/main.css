@@ -605,12 +605,12 @@ input[type="button"]:focus {
   text-align: center;
 }
 
-@media (max-width: 350px) {
-  .header {
-    background-size: contain;
-    background-height: 100%;
-    background-position: center center;
-    border-top: 50px solid white;
+@media (max-width: 550px) {
+  .header video {
+    display: none;
+  }
+  .header .text {
+    background-image: url(../img/header-cut-sm.svg);
   }
 }
 
