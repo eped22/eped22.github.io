@@ -818,9 +818,9 @@ section.blue img {
 }
 
 section.explore {
-  min-height: 120vh;
+  min-height: 100vh;
   padding-top: 20vh;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
   background: white;
   background-size: cover;
   background-repeat: no-repeat;
@@ -858,7 +858,10 @@ section.explore .work-container .work-images img {
 }
 
 section.explore h1 {
-  font-size: 35px;
+  font-family: 'Roboto Slab';
+  font-size: 55px;
+  font-weight: 300;
+  line-height: 1.5em;
 }
 
 section.explore h2 {
@@ -1012,17 +1015,18 @@ section.sides .input-group {
 section.sides .input-group input {
   height: 8vh;
   padding: 0;
-  font-size: 30px;
-  font-weight: 200;
+  font-size: 25px;
+  font-weight: 300;
   color: black;
-  color-display: block;
-  background: rgba(255, 255, 255, 0.7);
-  border: 2px solid rgba(255, 255, 255, 0.99);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  display: block;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-bottom: solid 2px #00B2E2;
 }
 
 section.sides .input-group input {
-  width: 100%;
+  width: 90%;
+  margin: 1vw;
 }
 
 section.sides .input-group input[type="text"] {
@@ -1040,7 +1044,22 @@ section.sides .input-group input.large[type="text"] {
 section.sides .input-group input::-webkit-input-placeholder {
   font-family: 'roboto';
   font-weight: 300;
-  color: rgba(0, 0, 0, 0.8);
+}
+
+section.sides .input-group textarea {
+  width: 100%;
+  margin: 1vw;
+  font-size: 25px;
+  font-weight: 300;
+  color: black;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-bottom: solid 2px #00B2E2;
+}
+
+section.sides .input-group ::-webkit-textarea-placeholder {
+  font-family: 'roboto';
+  font-weight: 300;
 }
 
 section.sides .right-half {
