@@ -446,7 +446,7 @@ input[type="button"]:focus {
 }
 
 .nav {
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   right: 0;
@@ -1340,7 +1340,10 @@ section.about-header .middle .skills {
 
 section.top {
   height: 75vh;
-  background: yellow;
+  background-image: url(/assets/img/m2-bigback.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .description {
