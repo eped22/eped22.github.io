@@ -1410,6 +1410,9 @@ section.explore.portfolio .work-container .work-images.big img.drop {
 }
 
 @media (max-width: 870px) {
+  .description {
+    height: auto;
+  }
   section.explore.portfolio .work-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
