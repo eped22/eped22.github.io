@@ -1,10 +1,10 @@
 section.top
 	height: 75vh
 	background:
-		image: url(/assets/img/m2-bigback.jpg)
-		size: cover
+		image: url(/assets/img/m2-phones.jpg)
+		size: contain
 		repeat: no-repeat
-		position: center center
+		position: center bottom
 
 .description
 	display: flex
@@ -25,6 +25,7 @@ section.explore.portfolio
 			flex: auto
 			width: 200px
 			margin: .5vw
+			margin-bottom: 10vh
 
 			img
 				width: 35%
@@ -32,6 +33,7 @@ section.explore.portfolio
 				@include box_shadow (0)
 
 		.work-images.big
+			margin-bottom: 10vh
 
 			img
 				height: 95vh

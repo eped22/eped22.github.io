@@ -280,6 +280,14 @@ h1.giant {
   line-height: .5em;
 }
 
+h1.portfolio {
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+}
+
 @media (max-width: 620px) {
   .flex {
     -webkit-box-orient: vertical;
@@ -1340,10 +1348,10 @@ section.about-header .middle .skills {
 
 section.top {
   height: 75vh;
-  background-image: url(/assets/img/m2-bigback.jpg);
-  background-size: cover;
+  background-image: url(/assets/img/m2-phones.jpg);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center bottom;
 }
 
 .description {
@@ -1379,12 +1387,17 @@ section.explore.portfolio .work-container .work-images {
           flex: auto;
   width: 200px;
   margin: .5vw;
+  margin-bottom: 10vh;
 }
 
 section.explore.portfolio .work-container .work-images img {
   width: 35%;
   height: auto;
   box-shadow: none;
+}
+
+section.explore.portfolio .work-container .work-images.big {
+  margin-bottom: 10vh;
 }
 
 section.explore.portfolio .work-container .work-images.big img {
