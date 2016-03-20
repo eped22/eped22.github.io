@@ -218,7 +218,7 @@ th {
 
 body {
   background-color: white;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.6;
   font-family: 'Roboto', sans-serif;
   color: #666;
@@ -274,7 +274,7 @@ svg {
 }
 
 h1.giant {
-  font-family: roboto;
+  font-family: 'Roboto';
   font-size: 200px;
   font-weight: 800;
   line-height: .5em;
@@ -282,7 +282,7 @@ h1.giant {
 
 h1.portfolio {
   font-family: 'Roboto';
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 300;
   color: black;
   text-align: center;
@@ -650,6 +650,7 @@ section.responsive {
   background: white;
   border-radius: 2px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  font-size: 17px;
 }
 
 .center-box .text-box {
@@ -867,9 +868,9 @@ section.explore .work-container .work-images img {
 
 section.explore h1 {
   font-family: 'Roboto Slab';
-  font-size: 55px;
-  font-weight: 300;
-  line-height: 1.5em;
+  font-size: 95px;
+  font-weight: 100;
+  line-height: .5em;
 }
 
 section.explore h2 {
@@ -877,6 +878,17 @@ section.explore h2 {
   font-size: 35px;
   line-height: .8em;
   font-weight: 900;
+}
+
+section.explore h2.under {
+  display: inline;
+  border-bottom: 2px solid black;
+}
+
+section.explore h2.left {
+  font-family: 'Roboto Slab';
+  font-size: 50px;
+  font-weight: 300;
 }
 
 section.explore h3 {
@@ -1370,6 +1382,24 @@ section.top {
           flex: 1;
 }
 
+.description p {
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: .9em;
+}
+
+section.explore.portfolio .title {
+  text-align: left;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+section.explore.portfolio p {
+  width: 50%;
+  margin-bottom: 8vh;
+  color: rgba(0, 0, 0, 0.9);
+}
+
 section.explore.portfolio .work-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1412,6 +1442,9 @@ section.explore.portfolio .work-container .work-images.big img.drop {
 @media (max-width: 870px) {
   .description {
     height: auto;
+  }
+  section.explore.portfolio p {
+    width: 100%;
   }
   section.explore.portfolio .work-container {
     -webkit-box-orient: vertical;
