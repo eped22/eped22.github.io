@@ -1369,10 +1369,9 @@ section.about-header .middle .skills {
 
 section.top {
   height: 75vh;
-  background-image: url(/assets/img/m2-phones.jpg);
-  background-size: contain;
+  background-image: url(/assets/img/m2-screens.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
 }
 
 .description {
@@ -1395,6 +1394,10 @@ section.top {
   text-align: justify;
   color: rgba(0, 0, 0, 0.8);
   font-size: .9em;
+}
+
+section.explore.portfolio .bg-grey {
+  padding-top: 20vh;
 }
 
 section.explore.portfolio .title {
@@ -1430,9 +1433,13 @@ section.explore.portfolio .work-container .work-images {
 }
 
 section.explore.portfolio .work-container .work-images img {
-  width: 35%;
+  width: 75%;
   height: auto;
   box-shadow: none;
+}
+
+section.explore.portfolio .work-container .work-images img.drop {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 section.explore.portfolio .work-container .work-images.big {
@@ -1445,7 +1452,7 @@ section.explore.portfolio .work-container .work-images.big img {
 }
 
 section.explore.portfolio .work-container .work-images.big img.drop {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 @media (max-width: 870px) {
@@ -1513,5 +1520,15 @@ section.top.csa .top-img {
 }
 
 section.top.tormenta {
-  background: gray;
+  height: 75vh;
+  background-image: url(/assets/img/tormenta-print.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: 550px) {
+  section.top.tormenta {
+    background-size: contain;
+  }
 }
