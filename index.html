@@ -1,3 +1,14 @@
+<?php $name = $_POST[‘first’];
+$email = $_POST[‘last’];
+$message = $_POST['message'];
+$formcontent="From: $name \n Message: $message";
+$recipient = "eped22@gmail.com";
+$subject = "Contact Form";
+$mailheader = "From: $email \r\n";
+mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+echo "Thank You!";
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -62,7 +73,7 @@
           	li CSS / SASS
           	li Java / Jquery
           	li Github
-          
+
           -->
           <!--.flex-1
           ul
