@@ -1007,7 +1007,7 @@ section.sides {
 section.sides h2 {
   font-size: 75px;
   line-height: .8em;
-  padding-bottom: 5vh;
+  padding-bottom: 3vh;
   margin: 0;
   color: rgba(103, 103, 103, 0.9);
 }
@@ -1142,7 +1142,7 @@ section.sides .right-half .side-left {
           justify-content: center;
   background-image: url(/assets/img/linkedin-logo.png), url(/assets/img/linkedin-back.jpg);
   background-position: center, center;
-  background-size: 20%, cover;
+  background-size: 17%, cover;
   background-repeat: no-repeat, no-repeat;
 }
 
@@ -1157,7 +1157,7 @@ section.sides .right-half .side-center {
           justify-content: center;
   background-image: url(/assets/img/hub.png), url(/assets/img/github.jpg);
   background-position: center, center;
-  background-size: 20%, cover;
+  background-size: 17%, cover;
   background-repeat: no-repeat, no-repeat;
 }
 
@@ -1172,7 +1172,7 @@ section.sides .right-half .side-right {
           justify-content: center;
   background-image: url(/assets/img/behance-logo-white.png), url(/assets/img/behance.png);
   background-position: center, center;
-  background-size: 25%, cover;
+  background-size: 22%, cover;
   background-repeat: no-repeat, no-repeat;
 }
 
