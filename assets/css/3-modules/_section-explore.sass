@@ -27,7 +27,11 @@ section.explore
 			img
 				width: 100%
 				height: auto
-				@include box_shadow (1)
+				transition: all 0.4s
+				@include box_shadow (4)
+
+				&:hover
+					@include box_shadow(5)
 
 	h1
 		font-family: 'Roboto Slab'
@@ -84,3 +88,8 @@ section.explore
 				width: 100%
 				margin-left: 0
 				margin-right: 0
+
+@media (max-width: 320px)
+	section.explore
+		height: auto
+		padding-top: 30vh

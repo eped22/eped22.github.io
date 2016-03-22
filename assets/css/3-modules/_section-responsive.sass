@@ -1,102 +1,106 @@
 section.responsive
-  height: 150vh
-  align-items: center
-  justify-content: center
-  background:
-    image: url(/assets/img/wireframe.jpg)
-    size: cover
-    repeat: no-repeat
+	height: 150vh
+	align-items: center
+	justify-content: center
+	background:
+		image: url(/assets/img/wireframe.jpg)
+		size: cover
+		repeat: no-repeat
 
 .center-box
-  flex-direction: row
-  max-width: 60%
-  min-width: 50%
-  min-height: 30%
-  max-height: 70%
-  background: white
-  border-radius: 2px
-  @include box_shadow(3)
+	flex-direction: row
+	max-width: 60%
+	min-width: 50%
+	min-height: 45vh
+	max-height: 70%
+	background: white
+	border-radius: 2px
+	font-size: 17px
+	@include box_shadow(3)
 
-  .text-box
-    width: 50%
-    color: black
+	.text-box
+		width: 50%
+		color: black
 
-  .right-side
-    width: 50%
-    margin-top: -5%
-    margin-bottom: -5%
-    padding: 0
-    background:
-      image: url(../img/blue-phone.png)
-      size: contain
-      position: center
-      repeat: no-repeat
+	.right-side
+		width: 50%
+		margin-top: -5%
+		margin-bottom: -5%
+		padding: 0
+		background:
+			image: url(../img/blue-phone.png)
+			size: contain
+			position: center
+			repeat: no-repeat
 
-  h2
-    padding-left: 5%
-    padding-top: 8%px
-    padding-bottom: 0
-    margin-bottom: 0
-  p
-    margin-left: 8%
-    padding-top: 1%
-    margin-top: 0
-		font-size: 17px
+	h2
+		padding-left: 5%
+		padding-bottom: 0
+		margin-bottom: 0
+	p
+		margin-left: 2vw
+		padding-top: 1.5vh
+		margin-top: 0
+		font-size: 1.1em
 
-  img
-    width: 100%
+	img
+		width: 100%
 
 @media (max-width: 800px)
-  section.responsive
+	section.responsive
 
-    .center-box
-      max-width: 80%
+		.center-box
+			max-width: 80%
+			min-height: 35vh
 
-    h2
-      font-size: 20px
-    p
-      padding-top: 20px
-      margin-left: 20px
-      font-size: 12px
+		h2
+			font-size: 20px
+		p
+			padding-top: 20px
+			margin-left: 20px
+			font-size: 12px
 
-    img
-      width: 80%
-      margin-left: 10%
+		img
+			width: 80%
+			margin-left: 10%
 
 @media (max-width: 420px)
-  section.responsive
-    height: 150vh
+	section.responsive
+		height: 150vh
 
-    .center-box
-      max-width: 90%
-      max-height: 80%
+		.center-box
+			max-width: 90vw
+			max-height: 80%
+			min-height: 32vh
 
-    h2
-      font-size: 18px
-      margin-left: 15px
-    p
-      padding-top: 10px
-      margin-left: 15px
-      font-size: 12px
+		h2
+			font-size: 18px
+			margin-left: 15px
+			text-align: center
+		p
+			padding-top: 10px
+			margin-left: 15px
+			font-size: 12px
+			text-align: justify
 
-    img
-      width: 90%
-      margin-left: 5%
+		img
+			width: 90%
+			margin-left: 5%
 
 @media (max-width: 320px)
-  section.responsive
+	section.responsive
 
-    .center-box
-      max-width: 90%
+		.center-box
+			max-width: 90vw
 
-    h2
-      font-size: 14px
-      padding-top: 18px
-      padding-left: 10px
+		h2
+			font-size: 14px
+			padding-top: 18px
+			padding-left: 10px
 
-    p
-      font-size: 10px
-      padding-top: 14px
+		p
+			font-size: 10px
+			padding-top: 14px
 
-    img
-      margin-left: 5%
+		img
+			margin-left: 5%

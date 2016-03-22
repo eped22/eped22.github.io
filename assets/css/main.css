@@ -295,6 +295,15 @@ h1.portfolio {
   text-align: center;
 }
 
+i {
+  color: #222222;
+  line-height: 1.6em;
+}
+
+.material-icons {
+  font-size: 1em;
+}
+
 @media (max-width: 620px) {
   .flex {
     -webkit-box-orient: vertical;
@@ -654,12 +663,12 @@ section.responsive {
           flex-direction: row;
   max-width: 60%;
   min-width: 50%;
-  min-height: 30%;
+  min-height: 45vh;
   max-height: 70%;
   background: white;
   border-radius: 2px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   font-size: 17px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .center-box .text-box {
@@ -680,15 +689,15 @@ section.responsive {
 
 .center-box h2 {
   padding-left: 5%;
-  padding-top: 8%px;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
 .center-box p {
-  margin-left: 8%;
-  padding-top: 1%;
+  margin-left: 2vw;
+  padding-top: 1.5vh;
   margin-top: 0;
+  font-size: 1.1em;
 }
 
 .center-box img {
@@ -698,6 +707,7 @@ section.responsive {
 @media (max-width: 800px) {
   section.responsive .center-box {
     max-width: 80%;
+    min-height: 35vh;
   }
   section.responsive h2 {
     font-size: 20px;
@@ -718,17 +728,20 @@ section.responsive {
     height: 150vh;
   }
   section.responsive .center-box {
-    max-width: 90%;
+    max-width: 90vw;
     max-height: 80%;
+    min-height: 32vh;
   }
   section.responsive h2 {
     font-size: 18px;
     margin-left: 15px;
+    text-align: center;
   }
   section.responsive p {
     padding-top: 10px;
     margin-left: 15px;
     font-size: 12px;
+    text-align: justify;
   }
   section.responsive img {
     width: 90%;
@@ -738,7 +751,7 @@ section.responsive {
 
 @media (max-width: 320px) {
   section.responsive .center-box {
-    max-width: 90%;
+    max-width: 90vw;
   }
   section.responsive h2 {
     font-size: 14px;
@@ -872,7 +885,13 @@ section.explore .work-container .work-images {
 section.explore .work-container .work-images img {
   width: 100%;
   height: auto;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+section.explore .work-container .work-images img:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 section.explore h1 {
@@ -942,6 +961,13 @@ section.explore p {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  section.explore {
+    height: auto;
+    padding-top: 30vh;
   }
 }
 
@@ -1284,6 +1310,15 @@ section.about-header h1 {
   padding: 0;
 }
 
+section.about-header h2 {
+  color: black;
+}
+
+section.about-header h3 {
+  color: #222222;
+  display: inline;
+}
+
 section.about-header .top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1321,7 +1356,7 @@ section.about-header .top .right-side .text {
 
 section.about-header .middle {
   text-align: center;
-  margin: 10vh 12vw 0 12vw;
+  margin: 10vh 10vw 0 10vw;
 }
 
 section.about-header .middle .skills {
@@ -1394,6 +1429,10 @@ section.top {
   text-align: justify;
   color: rgba(0, 0, 0, 0.8);
   font-size: .9em;
+}
+
+section.explore.bottom {
+  min-height: auto;
 }
 
 section.explore.portfolio .bg-grey {
