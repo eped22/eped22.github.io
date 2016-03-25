@@ -7,20 +7,25 @@
     // return false;
  // });
 //});
+var pContainerHeight = $('section.top').height();
 
 $(window).scroll(function(){
-  workstripScroll();
-});
 
+  var wScroll = $(this).scrollTop();
 
-function workstripScroll() {
-  var wScroll = $(window).scrollTop();
+  if (wScroll <= pContainerHeight) {
 
-$('.top-work').css('background-position','center -'+ wScroll +'px');
-
-
-  var wScroll = $(window).scrollTop();
-
-$('.top-work1').css('background-position','center '+ wScroll +'px');
+		$('.mock-up').css({
+			'transform' : 'translate(0px, -'+wScroll /40 +'vh)'
+		});
 
 }
+
+	var wScroll = $(this).scrollTop();
+
+	if(wScroll > $('.move').offset().top -
+	$(window).height()){
+
+		$('.move').addClass('slideInUp');
+	}
+});
