@@ -28,4 +28,21 @@ $(window).scroll(function(){
 
 		$('.move').addClass('slideInUp');
 	}
+
+	var wScroll = $(this).scrollTop();
+
+	if(wScroll > $('.fade').offset().top -
+	$(window).height()){
+
+		$('.fade').addClass('fadeIn');
+	}
+
+	var wScroll = $(this).scrollTop();
+
+	if(wScroll > $('section.sides').offset().top -
+	$(window).height()){
+
+		$('.grow').addClass('pulse');
+	}
+
 });

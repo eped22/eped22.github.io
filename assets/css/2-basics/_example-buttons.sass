@@ -3,28 +3,36 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"]
-  display: inline-block
-  height: 8vh
-  padding: 0 5vh
-  color: #eaeaea
-  text-align: center
-  font-size: 22px
-  font-weight: 700
-  line-height: 34px
-  letter-spacing: .1rem
-  text-transform: uppercase
-  text-decoration: none
-  white-space: nowrap
-  background-color: rgba($primary-color,.8)
-  border-radius: 2px
-  border: 1px solid $primary-color
-  cursor: pointer
-  box-sizing: border-box
-  margin-top: 5vh
-  transition: all 0.4s
-  @include box_shadow(2)
+	display: inline-block
+	height: 8vh
+	padding: 0 5vh
+	color: #eaeaea
+	text-align: center
+	font-size: 22px
+	font-weight: 700
+	line-height: 34px
+	letter-spacing: .1rem
+	text-transform: uppercase
+	text-decoration: none
+	white-space: nowrap
+	background-color: rgba($primary-color,.8)
+	border-radius: 2px
+	border: 1px solid $primary-color
+	cursor: pointer
+	box-sizing: border-box
+	margin-top: 5vh
+	transition: all 0.4s
+	@include box_shadow(2)
 
-  &:hover,
-  &:active,
-  &:focus
-    @include box_shadow(3)
+	&.pulse
+		animation-name: pulse
+		-webkit-animation-duration: 1.5s
+		animation-duration: 1.5s
+		-webkit-animation-fill-mode: both
+		animation-fill-mode: both
+		opacity: 1
+
+	&:hover,
+	&:active,
+	&:focus
+		@include box_shadow(3)

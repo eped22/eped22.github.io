@@ -8,3 +8,26 @@
 
 .slideInUp
   animation-name: slideInUp
+
+@keyframes fadeIn
+  from
+    opacity: 0
+
+  to
+    opacity: 1
+
+.fadeIn
+  animation-name: fadeIn
+
+@keyframes pulse
+  from
+    transform: scale3d(1, 1, 1)
+
+  50%
+    transform: scale3d(1.15, 1.15, 1.15)
+
+  to
+    transform: scale3d(1, 1, 1)
+
+.pulse
+  animation-name: pulse
