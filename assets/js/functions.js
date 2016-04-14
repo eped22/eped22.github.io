@@ -45,4 +45,15 @@ $(window).scroll(function(){
 		$('.grow').addClass('pulse');
 	}
 
+	var wScroll = $(this).scrollTop();
+
+	if(wScroll > $('section.responsive').offset().top -
+	$(window).height()){
+
+		$('.center-box').addClass('growUp');
+		$('.text-box').addClass('fadeInLeftBig');
+		$('.right-side').addClass('fadeInRightBig');
+		}
+
+
 });

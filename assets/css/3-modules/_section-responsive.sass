@@ -16,11 +16,26 @@ section.responsive
 	background: white
 	border-radius: 2px
 	font-size: 17px
-	@include box_shadow(3)
+
+	&.growUp
+		animation-name: growUp
+		-webkit-animation-duration: 2s
+		animation-duration: 2s
+		-webkit-animation-fill-mode: both
+		animation-fill-mode: both
+		opacity: 1
 
 	.text-box
 		width: 50%
 		color: black
+
+		&.fadeInLeftBig
+			animation-name: fadeInLeftBig
+			-webkit-animation-duration: 2.5s
+			animation-duration: 2.5s
+			-webkit-animation-fill-mode: both
+			animation-fill-mode: both
+			opacity: 1
 
 	.right-side
 		width: 50%
@@ -32,6 +47,14 @@ section.responsive
 			size: contain
 			position: center
 			repeat: no-repeat
+
+		&.fadeInRightBig
+			animation-name: fadeInRightBig
+			-webkit-animation-duration: 2.5s
+			animation-duration: 2.5s
+			-webkit-animation-fill-mode: both
+			animation-fill-mode: both
+			opacity: 1
 
 	h2
 		padding-left: 5%
