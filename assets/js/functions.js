@@ -1,12 +1,6 @@
 !function(){$(".hamburger-menu").on("click",function(){$(".bar").toggleClass("animate")})}(),function(){$(".hamburger-menu").on("click",function(){$(".overlay").toggleClass("open")})}(),function(){$(".overlay-text").on("click",function(){$(".overlay").toggleClass("open")})}(),function(){$(".overlay-text").on("click",function(){$(".bar").toggleClass("animate")})}();
 
-//$( document ).ready(function() {
- // var hamburger = $('#hamburger-icon');
- // hamburger.click(function() {
-    // hamburger.toggleClass('overlay');
-    // return false;
- // });
-//});
+
 var pContainerHeight = $('section.top').height();
 
 $(window).scroll(function(){
@@ -29,23 +23,17 @@ $(window).scroll(function(){
 		$('.move').addClass('slideInUp');
 	}
 
-	var wScroll = $(this).scrollTop();
-
 	if(wScroll > $('.fade').offset().top -
 	$(window).height()){
 
 		$('.fade').addClass('fadeIn');
 	}
 
-	var wScroll = $(this).scrollTop();
-
 	if(wScroll > $('section.sides').offset().top -
 	$(window).height()){
 
 		$('.grow').addClass('pulse');
 	}
-
-	var wScroll = $(this).scrollTop();
 
 	if(wScroll > $('section.responsive').offset().top -
 	$(window).height()){
