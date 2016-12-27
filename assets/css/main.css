@@ -1328,6 +1328,7 @@ section.sides .right-half .bottom {
     -ms-flex-direction: row;
     flex-direction: row;
     min-height: 60px;
+    max-height: 150px;
 }
 
 section.sides .right-half .side-left {
